@@ -14,31 +14,37 @@
 
     <!-- form -->
 
-    <div class="container box-input bg-white p">
+    <div class="container box-input bg-white py-3">
         <div class="row gx-4 justify-content-center">
             <div class="col-2 d-flex flex-column justify-content-berween">
+
                 <label for="input_name" class="align-self-center">Nome Cognome</label>
                 <input type="text" class="form-control" id="input_name" placeholder="" aria-label="City">
+            
             </div>
             <div class="col-2 d-flex flex-column">
+
                 <label for="distance_km" class="align-self-center">Km da percorrere</label>
                 <input type="text" class="form-control" id="distance_km" placeholder="" aria-label="State">
+            
             </div>
             <div class="col-2 d-flex flex-column">
+
                 <label for="user_age" class="align-self-center">Fascia d'età</label>
                 <select class="form-select" id="user_age" aria-label="Default select example">
                     <option selected>Minorenne</option>
-                    <option value="1">Maggiorenne</option>
-                    <option value="2">Over 65</option>
+                    <option >Maggiorenne</option>
+                    <option >Over 65</option>
                     
-                  </select>
+                </select>
+
             </div>
         </div>
 
         <div class="row generate">
             <div class="col-auto m-auto">
-                <button type="submit" class="btn btn-primary me-2 py-1 bg-secondary">Genera</button>
-                <button type="submit" class="btn btn-primary ms-2 py-1 bg-secondary">Annulla</button>
+                <button onclick="myFunction()" type="submit" class="btn btn-primary me-2 py-1 bg-secondary">Genera</button>
+                <button type="reset" value="Reset" class="btn btn-primary ms-2 py-1 bg-secondary">Annulla</button>
               </div>
         </div>
 
@@ -47,18 +53,18 @@
     <h1 class="text-white text-center mb-0 mt-4 text-uppercase"> Il tuo biglietto</h1>
 
     <div class="generate_ticket">
-        <div class="container bg-white pt-3">
+        <div class="container bg-white">
             <h5>DETTAGLIO PASSEGGERI</h5>
             <hr class="m-0">
             <div class="row d-flex m-auto">
-                <div class="col-3 bg-secondary d-flex flex-column ">
-                    <h4>NOME PASSEGGERO</h4>
-                    <span class="h3" id="nome_passeggero"> jffj</span>
+                <div class="col-3 bg-secondary d-flex flex-column p-4 ">
+                    <h3>NOME PASSEGGERO</h3>
+                    <span class="h3" id="nome_passeggero"> </span>
                 </div>
 
                 <div class="col-3 d-flex flex-column p-4">
                     <h6>Offerta</h6>
-                    <span id="discount_type"> jffj</span>
+                    <span id="discount_type"> </span>
                 </div>
 
                 <div class="col-2 d-flex flex-column p-4">
@@ -73,7 +79,7 @@
 
                 <div class="col-2 d-flex flex-column p-4">
                     <h6>Costo biglietto</h6>
-                    <span id="ticket-price"> jffj</span>
+                    <span id="ticket_price_show"> jffj</span>
                 </div>
 
                 
