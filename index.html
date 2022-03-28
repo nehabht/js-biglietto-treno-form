@@ -13,73 +13,75 @@
     <h1 class="text-white text-center p-4 text-uppercase"> Calcola il prezzo del tuo biglietto</h1>
 
     <!-- form -->
+    <form method="get">
+        <div class="container box-input bg-white py-3">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-2 d-flex flex-column mx-4">
 
-    <div class="container box-input bg-white py-3">
-        <div class="row gx-4 justify-content-center">
-            <div class="col-2 d-flex flex-column justify-content-berween">
+                    <label for="input_name" class="align-self-center">Nome Cognome</label>
+                    <input type="text" class="form-control" id="input_name" placeholder="" aria-label="City">
+                
+                </div>
+                <div class="col-2 d-flex flex-column mx-4">
 
-                <label for="input_name" class="align-self-center">Nome Cognome</label>
-                <input type="text" class="form-control" id="input_name" placeholder="" aria-label="City">
-            
+                    <label for="distance_km" class="align-self-center">Km da percorrere</label>
+                    <input type="text" class="form-control" id="distance_km" placeholder="" aria-label="State">
+                
+                </div>
+                <div class="col-2 d-flex flex-column mx-4">
+
+                    <label for="user_age" class="align-self-center">Fascia d'età</label>
+                    <select class="form-select" id="user_age" aria-label="Default select example">
+                        <option selected>Minorenne</option>
+                        <option >Maggiorenne</option>
+                        <option >Over 65</option>
+                        
+                    </select>
+
+                </div>
             </div>
-            <div class="col-2 d-flex flex-column">
 
-                <label for="distance_km" class="align-self-center">Km da percorrere</label>
-                <input type="text" class="form-control" id="distance_km" placeholder="" aria-label="State">
-            
+            <div class="row generate">
+                <div class="col-auto m-auto">
+                    <input onclick="myFunction()" type="submit" value="Genera" class="btn generate_ticket_btn btn-primary me-2 py-1 bg-secondary">
+                    <input type="reset" value="Annulla" class="btn btn-primary ms-2 py-1 bg-secondary">
+                </div>
             </div>
-            <div class="col-2 d-flex flex-column">
 
-                <label for="user_age" class="align-self-center">Fascia d'età</label>
-                <select class="form-select" id="user_age" aria-label="Default select example">
-                    <option selected>Minorenne</option>
-                    <option >Maggiorenne</option>
-                    <option >Over 65</option>
-                    
-                </select>
-
-            </div>
         </div>
+    </form>
 
-        <div class="row generate">
-            <div class="col-auto m-auto">
-                <button onclick="myFunction()" type="submit" class="btn btn-primary me-2 py-1 bg-secondary">Genera</button>
-                <button type="reset" value="Reset" class="btn btn-primary ms-2 py-1 bg-secondary">Annulla</button>
-              </div>
-        </div>
 
-    </div>
+    <div class="your_ticket d-none ">
 
-    <h1 class="text-white text-center mb-0 mt-4 text-uppercase"> Il tuo biglietto</h1>
-
-    <div class="generate_ticket">
-        <div class="container bg-white">
+        <h1 class="text-white text-center mb-0 mt-4 mb-1 text-uppercase"> Il tuo biglietto</h1>
+        <div class="container bg-white p-3">
             <h5>DETTAGLIO PASSEGGERI</h5>
             <hr class="m-0">
             <div class="row d-flex m-auto">
                 <div class="col-3 bg-secondary d-flex flex-column p-4 ">
-                    <h3>NOME PASSEGGERO</h3>
+                    <h4>NOME PASSEGGERO</h4>
                     <span class="h3" id="nome_passeggero"> </span>
                 </div>
 
-                <div class="col-3 d-flex flex-column p-4">
+                <div class="col-3 d-flex flex-column justify-content-evenly ps-4">
                     <h6>Offerta</h6>
-                    <span id="discount_type"> </span>
+                    <span id="discount_type" class="mt-4"> </span>
                 </div>
 
-                <div class="col-2 d-flex flex-column p-4">
+                <div class="col-2 d-flex flex-column justify-content-evenly ">
                     <h6>Carrozza</h6>
-                    <span id="vagon"> jffj</span>
+                    <span id="vagon" class="mt-4"></span>
                 </div>
 
-                <div class="col-2 d-flex flex-column p-4">
+                <div class="col-2 d-flex flex-column justify-content-evenly ">
                     <h6>Codice CP</h6>
-                    <span id="cp_code"> jffj</span>
+                    <span id="cp_code" class="mt-4"></span>
                 </div>
 
-                <div class="col-2 d-flex flex-column p-4">
+                <div class="col-2 d-flex flex-column justify-content-evenly ">
                     <h6>Costo biglietto</h6>
-                    <span id="ticket_price_show"> jffj</span>
+                    <span id="ticket_price_show" class="mt-1"></span>
                 </div>
 
                 

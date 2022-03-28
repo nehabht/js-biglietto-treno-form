@@ -9,3 +9,25 @@ body{
 .generate{
     margin-top: 3rem;
 }
+
+.box-input label{
+    color: #B91450;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+}
+
+.form-control, .form-select, .btn-primary{
+    border: 1px solid #B91450 ;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.your_ticket .row{
+    height: 200px;
+
+}
